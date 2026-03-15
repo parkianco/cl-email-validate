@@ -7,7 +7,12 @@
 (defpackage #:cl-email-validate
   (:use #:cl)
   (:export
-   #:with-email-validate-timing
+   #:sigmoid
+   #:relu
+   #:dot-product
+   #:normalize
+   #:compute-layer
+#:with-email-validate-timing
    #:email-validate-batch-process
    #:email-validate-health-check#:valid-email-p
            #:parse-email
