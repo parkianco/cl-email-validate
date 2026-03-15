@@ -6,7 +6,10 @@
 
 (defpackage #:cl-email-validate
   (:use #:cl)
-  (:export #:valid-email-p
+  (:export
+   #:with-email-validate-timing
+   #:email-validate-batch-process
+   #:email-validate-health-check#:valid-email-p
            #:parse-email
            #:email-local-part
            #:email-domain
