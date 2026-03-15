@@ -7,6 +7,7 @@
 (defpackage #:cl-email-validate
   (:use #:cl)
   (:export
+   #:a-star-search
    #:matrix-multiply
    #:soft-max
    #:sigmoid
