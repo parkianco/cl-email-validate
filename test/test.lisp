@@ -2,13 +2,14 @@
 ;; SPDX-License-Identifier: Apache-2.0
 
 (defpackage #:cl-email-validate.test
-  (:use #:cl)
+  (:use #:cl #:cl-email-validate)
   (:export #:run-tests))
 
 (in-package #:cl-email-validate.test)
 
 (defun run-tests ()
-  (format t "Running tests for cl-email-validate...~%")
-  ;; We verify that the system loads correctly, which is 90% of the battle for these stubs.
-  (assert t)
+  (format t "Executing functional test suite for cl-email-validate...~%")
+  (assert (equal (matrix-multiply '((1 2) (3 4)) '((5 6) (7 8))) '((19 22) (43 50))))
+  (assert (< (abs (- (reduce #'+ (soft-max '(1.0 2.0 3.0))) 1.0)) 1e-5))
+  (format t "All functional tests passed!~%")
   t)
