@@ -7,6 +7,9 @@
 (defpackage #:cl-email-validate
   (:use #:cl)
   (:export
+   #:initialize-email-validate
+   #:email-validate-execute
+   #:email-validate-context
    #:a-star-search
    #:matrix-multiply
    #:soft-max
